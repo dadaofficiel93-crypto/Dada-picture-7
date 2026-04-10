@@ -1,0 +1,38 @@
+let products = JSON.parse(localStorage.getItem("products")) || [];
+
+function showProducts(){
+  let container = document.getElementById("products");
+  container.innerHTML = "";
+
+  products.forEach((p, index) => {
+    container.innerHTML += `
+      <div class="product">
+        <h3>${p.name}</h3>
+        <p>${p.price} FCFA</p>
+        <button onclick="deleteProduct(${index})">❌ Supprimer</button>
+      </div>
+    `;
+  });
+
+  localStorage.setItem("products", JSON.stringify(products));
+}
+
+function addProduct(){
+  let name = document.getElementById("name").value;
+  let price = document.getElementById("price").value;
+
+  if(name && price){
+    products.push({name, price});
+    showProducts();
+  }
+
+  document.getElementById("name").value = "";
+  document.getElementById("price").value = "";
+}
+
+function deleteProduct(index){
+  products.splice(index, 1);
+  showProducts();
+}
+
+showProducts();

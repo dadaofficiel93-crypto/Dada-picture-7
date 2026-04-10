@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DADA CHOP - Boutique Officielle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔥 DADA CHOP</h1>
+  <nav>
+    <a href="#shop">Boutique</a>
+    <a href="#admin">Admin</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Vente de maillots & habits stylés</h2>
+  <p>Qualité | Style | Prix abordable</p>
+</section>
+
+<!-- BOUTIQUE -->
+<section id="shop">
+  <h2>🛍️ Produits</h2>
+  <div id="products"></div>
+</section>
+
+<!-- ADMIN -->
+<section id="admin">
+  <h2>⚙️ Admin - Ajouter un produit</h2>
+
+  <input type="text" id="name" placeholder="Nom du produit">
+  <input type="text" id="price" placeholder="Prix">
+  <input type="text" id="image" placeholder="URL image (optionnel)">
+  <button onclick="addProduct()">Ajouter</button>
+
+  <p class="warning">Clique sur ❌ pour supprimer un produit</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>📞 Contact</h2>
+  <p>📱 WhatsApp : +226 07123085</p>
+  <p>📧 Email : dadaofficiel93@gmail.com</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

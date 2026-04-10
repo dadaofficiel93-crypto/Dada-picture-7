@@ -1,0 +1,54 @@
+body{
+  font-family: Arial;
+  margin:0;
+  background:#0f0f0f;
+  color:white;
+}
+
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:black;
+}
+
+nav a{
+  color:gold;
+  margin:0 10px;
+  text-decoration:none;
+}
+
+.hero{
+  text-align:center;
+  padding:40px;
+  background:linear-gradient(45deg,#000,#222);
+}
+
+#shop, #admin, #contact{
+  padding:20px;
+}
+
+.product{
+  background:#1c1c1c;
+  padding:15px;
+  margin:10px;
+  border-radius:10px;
+  display:inline-block;
+  width:200px;
+}
+
+button{
+  background:gold;
+  border:none;
+  padding:8px;
+  cursor:pointer;
+  margin-top:5px;
+}
+
+button:hover{
+  background:orange;
+}
+
+.warning{
+  color:red;
+}
